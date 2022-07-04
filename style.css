@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&display=swap');
+
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body {
+    background: no-repeat url("images/pattern-background-desktop.svg");
+    background-size: contain;
+    height: 98vh;
+    background-color: var(--pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.component {
+    width: 450px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.component img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+h2 {
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+
+.firstPara {
+    color: var(--Desaturated-blue);
+    font-size: 1em;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.price {
+    width: calc(80% - 30px);
+    margin: auto;
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.price img {
+    width: 50px;
+}
+
+.one {
+    flex: 1;
+    text-align: start;
+    margin-left: 20px;
+    color: var(--Dark-blue);
+    font-weight: bold;
+}
+
+.one span {
+    color: var(--Desaturated-blue);
+}
+
+button {
+    color: #fff;
+    background-color: var(--bright-blue);
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.cancel a {
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+}
